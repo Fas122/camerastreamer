@@ -75,8 +75,7 @@ int main() {
     boost::asio::io_context io;
     udp::socket socket(io);
     socket.open(udp::v4());
-    //udp::endpoint target(boost::asio::ip::make_address("127.0.0.1"), 5000);
-    udp::endpoint target(boost::asio::ip::make_address("192.168.1.131"), 5000);
+    udp::endpoint target(boost::asio::ip::make_address("127.0.0.1"), 5000);
 
     // -----------------------
     // Capture thread
